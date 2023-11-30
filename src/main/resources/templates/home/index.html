@@ -1,10 +1,19 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-        layout:decorate="~{layout}">
-    <head>
-        <title>[[#{home.index.headline}]]</title>
-    </head>
-    <body>
+      layout:decorate="~{layout}">
+<head>
+    <title>[[#{home.index.headline}]]</title>
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/vector-premium/fondo-abstracto-blanco-gris_46250-2112.jpg');
+            background-size: cover;
+            background-position: center;
+            color: black;
+            font-family: 'Mi Tipografia', sans-serif;
+        }
+    </style>
+</head>
+<body>
         <div layout:fragment="content">
             <h1 class="mb-4">[[#{home.index.headline}]]</h1>
             <p>[(#{home.index.text})]</p>
